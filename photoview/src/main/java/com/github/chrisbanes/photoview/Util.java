@@ -26,7 +26,9 @@ class Util {
         }
         switch (scaleType) {
             case MATRIX:
-                throw new IllegalStateException("Matrix scale type is not supported");
+                //throw new IllegalStateException("Matrix scale type is not supported");
+                //与com.github.yellowcath:YcShareElement 合用会闪退
+                return false;
         }
         return true;
     }
